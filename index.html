@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ramis Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+   /* CSS Reset */
+   body {
+      font-family: 'Shrikhand', cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url('img/bg.jpg');
+
+
+   }
+
+   .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      left: 23px;
+      top: 0px;
+
+   }
+
+   .left img {
+      width: 120px;
+      /* filter: invert(100%); color koh white  ya black krne kai lye  */
+   }
+
+   .left div {
+      line-height: 12px;
+      font-size: 16px;
+      text-align: center;
+   }
+
+   .mid {
+      display: block;
+      width: 59%;
+      margin: 12px auto;
+      /* border: 2px solid rgb(0, 255, 55); */
+
+   }
+
+   .right {
+      position: absolute;
+      right: 23px;
+      top: 22px;
+      /* border: 2px solid rgb(126, 80, 233); */
+      display: inline-block;
+   }
+
+   .navbar {
+      display: inline-block;
+   }
+
+   .navbar li {
+
+      display: inline-block;
+      font-size: 20px;
+
+   }
+
+   .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 23px 34px;
+
+   }
+
+   .navbar li a:hover,
+   .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(157 214 255);
+
+   }
+
+   .btn {
+      font-family: 'Shrikhand', cursive;
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      padding: 3px 6px;
+      border: 2px solid red;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+
+   }
+
+   .btn:hover {
+      background-color: rgb(178, 185, 180);
+
+
+   }
+
+   .container {
+      border: 2px solid #7ad0d9;
+      margin: 131px 33px;
+      padding: 44px 63px;
+      width: 33%;
+      border-radius: 28px;
+      text-align: center;
+   }
+
+   .form-group input {
+      border: 2px solid;
+      display: block;
+      width: 341px;
+      margin: 5px auto;
+      padding: 3px;
+      text-align: center;
+      font-size: 22px;
+      border-radius: 6px;
+
+   }
+
+   .container button {
+      display: block;
+      width: 78%;
+      margin: 12px auto;
+   }
+</style>
+
+<body>
+   <header class="header">
+      <!-- left bocx for logo -->
+      <div class="left">
+         <img src="img/bg.png" alt="">
+         <div>Ramis Fitness</div>
+      </div>
+      <!-- mid box for nav bar -->
+      <div class="mid">
+         <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+         <button class="btn">Call Us Now</button>
+         <button class="btn">Email Us</button>
+      </div>
+   </header>
+   <div class="container">
+      <h1>Join The Best Gym</h1>
+      <form action="noaction.php">
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+         </div>
+
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+         </div>
+
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+         </div>
+
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+         </div>
+         <button class="btn">Submit</button>
+
+
+      </form>
+   </div>
+</body>
+
+</html>
